@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dienstrad-Leasing-Rechner 2026 | Nettobelastung & Ersparnis vergleichen</title>
+<meta name="description" content="Kostenloser Dienstrad-Leasing-Rechner: Nettobelastung, Steuerersparnis und Vergleich der Leasingfaktoren von JobRad, BusinessBike, Eurorad, Lease a Bike & Mein Dienstrad. Aktuell für 2026.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">Rad<span>Klarheit</span></a>
+    <nav>
+      <a href="index.html">Rechner</a>
+      <a href="arbeitgeber.html">Für Arbeitgeber</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Dienstrad-Leasing-Rechner 2026</h1>
+    <p class="sub">Berechne deine echte monatliche Nettobelastung beim Dienstrad-Leasing per Gehaltsumwandlung und vergleiche die Leasingfaktoren der großen Anbieter, bevor du dich entscheidest.</p>
+  </section>
+
+  <section class="calc-card">
+    <h2>Deine Berechnung</h2>
+    <div class="grid-2">
+      <label>
+        Bruttolistenpreis des Rads (UVP)
+        <input type="number" id="preis" value="3500" min="100" step="50">
+      </label>
+      <label>
+        Monatliches Bruttogehalt
+        <input type="number" id="gehalt" value="3200" min="0" step="50">
+      </label>
+      <label>
+        Anbieter / Leasingfaktor
+        <select id="anbieter"></select>
+      </label>
+      <label>
+        Persönliche Abgabenquote (Steuer + Sozialabgaben)
+        <select id="abgaben">
+          <option value="0.30">ca. 30% (niedrigeres Einkommen)</option>
+          <option value="0.35" selected>ca. 35% (durchschnittlich)</option>
+          <option value="0.42">ca. 42% (Spitzensteuersatz)</option>
+          <option value="0.45">ca. 45% (Reichensteuer)</option>
+        </select>
+      </label>
+    </div>
+    <button id="berechnen">Jetzt berechnen</button>
+
+    <div id="ergebnis" class="result hidden">
+      <div class="result-grid">
+        <div class="result-box">
+          <span class="label">Monatliche Bruttorate</span>
+          <span class="value" id="r-brutto">-</span>
+        </div>
+        <div class="result-box">
+          <span class="label">Geldwerter Vorteil (zu versteuern, 0,25%-Regel)</span>
+          <span class="value" id="r-gwv">-</span>
+        </div>
+        <div class="result-box highlight">
+          <span class="label">Deine geschätzte Nettobelastung / Monat</span>
+          <span class="value" id="r-netto">-</span>
+        </div>
+        <div class="result-box">
+          <span class="label">Ersparnis ggü. Barkauf (über 36 Monate)</span>
+          <span class="value" id="r-ersparnis">-</span>
+        </div>
+      </div>
+      <p class="disclaimer">Vereinfachte Schätzung ohne Berücksichtigung von Restwert, Versicherung und individueller Lohnsteuer. Keine Steuerberatung. Tatsächliche Werte können je nach Arbeitgeber-Vereinbarung abweichen.</p>
+    </div>
+  </section>
+
+  <section class="compare-card">
+    <h2>Leasingfaktoren im Vergleich (Stand 2026)</h2>
+    <table>
+      <thead><tr><th>Anbieter</th><th>Leasingfaktor</th><th>Versicherung/Monat</th><th>Restwert nach 36 Mon.</th></tr></thead>
+      <tbody id="compare-body"></tbody>
+    </table>
+    <p class="hint">Niedrigerer Leasingfaktor = günstigere monatliche Rate bei gleichem Radpreis. Der Faktor allein entscheidet aber nicht: Versicherungspaket und Restwert wirken sich über die Laufzeit stark aus.</p>
+  </section>
+
+  <section class="info-card">
+    <h2>Wie funktioniert Dienstrad-Leasing steuerlich?</h2>
+    <p>Beim Dienstrad-Leasing least dein Arbeitgeber ein Fahrrad oder E-Bike und least es an dich weiter. Die monatliche Rate wird per Gehaltsumwandlung von deinem Bruttogehalt abgezogen, dadurch sparst du Lohnsteuer und Sozialabgaben auf diesen Teil deines Gehalts. Seit 2020 musst du nur noch 0,25% des Bruttolistenpreises (aufgerundet auf volle 100 Euro) als geldwerten Vorteil versteuern, nicht die volle Rate. Das macht Leasing gegenüber dem Direktkauf oft günstiger, abhängig von deinem Steuersatz und dem gewählten Anbieter.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 RadKlarheit &middot; <a href="impressum.html">Impressum</a> &middot; <a href="datenschutz.html">Datenschutz</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
