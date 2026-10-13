@@ -6,11 +6,12 @@
 <title>Dienstrad-Leasing-Rechner 2026 | Nettobelastung & Ersparnis vergleichen</title>
 <meta name="description" content="Kostenloser Dienstrad-Leasing-Rechner: Nettobelastung, Steuerersparnis und Vergleich der Leasingfaktoren von JobRad, BusinessBike, Eurorad, Lease a Bike & Mein Dienstrad. Aktuell für 2026.">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231f7a4d'/%3E%3Ccircle cx='32' cy='66' r='16' fill='none' stroke='%23fff' stroke-width='6'/%3E%3Ccircle cx='68' cy='66' r='16' fill='none' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M32 66 L46 36 L62 36 M46 36 L68 66 M46 36 L40 50' stroke='%23fff' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a href="index.html" class="brand">Rad<span>Klarheit</span></a>
+    <a href="index.html" class="brand"><span class="brand-icon" aria-hidden="true">🚲</span>Rad<span>Klarheit</span></a>
     <nav>
       <a href="index.html">Rechner</a>
       <a href="arbeitgeber.html">Für Arbeitgeber</a>
@@ -20,6 +21,7 @@
 
 <main class="container">
   <section class="hero">
+    <span class="eyebrow">Kostenlos &middot; Keine Anmeldung &middot; Läuft lokal im Browser</span>
     <h1>Dienstrad-Leasing-Rechner 2026</h1>
     <p class="sub">Berechne deine echte monatliche Nettobelastung beim Dienstrad-Leasing per Gehaltsumwandlung und vergleiche die Leasingfaktoren der großen Anbieter, bevor du dich entscheidest.</p>
   </section>
@@ -54,19 +56,19 @@
     <div id="ergebnis" class="result hidden">
       <div class="result-grid">
         <div class="result-box">
-          <span class="label">Monatliche Bruttorate</span>
+          <span class="label">💶 Monatliche Bruttorate</span>
           <span class="value" id="r-brutto">-</span>
         </div>
         <div class="result-box">
-          <span class="label">Geldwerter Vorteil (zu versteuern, 0,25%-Regel)</span>
+          <span class="label">📋 Geldwerter Vorteil (0,25%-Regel)</span>
           <span class="value" id="r-gwv">-</span>
         </div>
         <div class="result-box highlight">
-          <span class="label">Deine geschätzte Nettobelastung / Monat</span>
+          <span class="label">✅ Deine Nettobelastung / Monat</span>
           <span class="value" id="r-netto">-</span>
         </div>
         <div class="result-box">
-          <span class="label">Ersparnis ggü. Barkauf (über 36 Monate)</span>
+          <span class="label">📈 Ersparnis ggü. Barkauf (36 Mon.)</span>
           <span class="value" id="r-ersparnis">-</span>
         </div>
       </div>
@@ -76,10 +78,12 @@
 
   <section class="compare-card">
     <h2>Leasingfaktoren im Vergleich (Stand 2026)</h2>
+    <div class="table-scroll">
     <table>
       <thead><tr><th>Anbieter</th><th>Leasingfaktor</th><th>Versicherung/Monat</th><th>Restwert nach 36 Mon.</th></tr></thead>
       <tbody id="compare-body"></tbody>
     </table>
+    </div>
     <p class="hint">Niedrigerer Leasingfaktor = günstigere monatliche Rate bei gleichem Radpreis. Der Faktor allein entscheidet aber nicht: Versicherungspaket und Restwert wirken sich über die Laufzeit stark aus.</p>
   </section>
 
