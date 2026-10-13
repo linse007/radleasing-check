@@ -20,30 +20,50 @@
   </div>
 </header>
 
-<main class="container">
-  <section class="hero">
-    <span class="eyebrow">Kostenlos &middot; Keine Anmeldung &middot; Läuft lokal im Browser</span>
-    <h1>Dienstrad-Leasing-Rechner 2026</h1>
+<section class="hero-band">
+  <div class="container hero">
+    <span class="eyebrow">⚡ Sofort-Ergebnis &middot; 🔒 100% lokal im Browser &middot; 🆓 Kostenlos</span>
+    <h1>Dienstrad-Leasing-Rechner <span class="hero-year">2026</span></h1>
     <p class="sub">Berechne deine echte monatliche Nettobelastung beim Dienstrad-Leasing per Gehaltsumwandlung und vergleiche die Leasingfaktoren der großen Anbieter, bevor du dich entscheidest.</p>
+  </div>
+</section>
+
+<main class="container">
+  <section class="features">
+    <div class="feature">
+      <span class="feature-icon">🧮</span>
+      <h3>Echte Formel, nicht nur Werbung</h3>
+      <p>0,25%-Regel, geldwerter Vorteil und Abgabenquote korrekt verrechnet, nicht nur die beworbene Rate.</p>
+    </div>
+    <div class="feature">
+      <span class="feature-icon">⚖️</span>
+      <h3>5 Anbieter im Vergleich</h3>
+      <p>JobRad, BusinessBike, Eurorad, Lease a Bike und Mein Dienstrad auf einen Blick gegenübergestellt.</p>
+    </div>
+    <div class="feature">
+      <span class="feature-icon">🔒</span>
+      <h3>Keine Datenübertragung</h3>
+      <p>Alle Eingaben bleiben in deinem Browser. Kein Konto, keine Anmeldung, kein Server-Roundtrip.</p>
+    </div>
   </section>
 
   <section class="calc-card">
-    <h2>Deine Berechnung</h2>
+    <h2><span class="icon-badge">1</span> Deine Berechnung</h2>
     <div class="grid-2">
       <label>
-        Bruttolistenpreis des Rads (UVP)
+        <span class="label-text">💰 Bruttolistenpreis des Rads (UVP)</span>
         <input type="number" id="preis" value="3500" min="100" step="50">
       </label>
       <label>
-        Monatliches Bruttogehalt
+        <span class="label-text">👔 Monatliches Bruttogehalt</span>
         <input type="number" id="gehalt" value="3200" min="0" step="50">
       </label>
       <label>
-        Anbieter / Leasingfaktor
+        <span class="label-text">🏷️ Anbieter / Leasingfaktor</span>
         <select id="anbieter"></select>
       </label>
       <label>
-        Persönliche Abgabenquote (Steuer + Sozialabgaben)
+        <span class="label-text">📊 Persönliche Abgabenquote</span>
         <select id="abgaben">
           <option value="0.30">ca. 30% (niedrigeres Einkommen)</option>
           <option value="0.35" selected>ca. 35% (durchschnittlich)</option>
@@ -52,7 +72,7 @@
         </select>
       </label>
     </div>
-    <button id="berechnen">Jetzt berechnen</button>
+    <button id="berechnen">Jetzt berechnen →</button>
 
     <div id="ergebnis" class="result hidden">
       <div class="result-grid">
@@ -78,7 +98,7 @@
   </section>
 
   <section class="compare-card">
-    <h2>Leasingfaktoren im Vergleich (Stand 2026)</h2>
+    <h2><span class="icon-badge">2</span> Leasingfaktoren im Vergleich (Stand 2026)</h2>
     <div class="table-scroll">
     <table>
       <thead><tr><th>Anbieter</th><th>Leasingfaktor</th><th>Versicherung/Monat</th><th>Restwert nach 36 Mon.</th></tr></thead>
@@ -96,6 +116,8 @@
 
 <footer class="site-footer">
   <div class="container">
+    <div class="footer-brand"><span class="brand-icon" aria-hidden="true">🚲</span> RadKlarheit</div>
+    <p class="footer-tagline">Unabhängige Rechner rund ums Dienstrad-Leasing. Keine Werbepartnerschaft mit Leasinganbietern.</p>
     <p>&copy; 2026 RadKlarheit &middot; <a href="impressum.html">Impressum</a> &middot; <a href="datenschutz.html">Datenschutz</a></p>
   </div>
 </footer>
