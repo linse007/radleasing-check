@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pendler-Vergleich: Dienstrad vs. Auto Rechner 2026 | Radleasing-Check</title>
+<meta name="description" content="Was spart sich wirklich mehr für den Arbeitsweg: Dienstrad-Leasing oder das eigene Auto? Kostenloser Pendler-Vergleichsrechner mit echten Zahlen.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231f7a4d'/%3E%3Ccircle cx='32' cy='66' r='16' fill='none' stroke='%23fff' stroke-width='6'/%3E%3Ccircle cx='68' cy='66' r='16' fill='none' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M32 66 L46 36 L62 36 M46 36 L68 66 M46 36 L40 50' stroke='%23fff' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8464912714139538" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><span class="brand-icon" aria-hidden="true">🚲</span>Radleasing<span>-Check</span></a>
+    <nav>
+      <a href="index.html">Rechner</a>
+      <a href="pendler-vergleich.html">Pendler-Vergleich</a>
+      <a href="arbeitgeber.html">Für Arbeitgeber</a>
+      <a href="ratgeber-jobwechsel.html">Ratgeber</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero-band">
+  <div class="container hero">
+    <span class="eyebrow">🚴 Dienstrad &middot; 🚗 Auto &middot; Echter Kostenvergleich</span>
+    <h1>Pendler-Vergleich: Dienstrad oder Auto?</h1>
+    <p class="sub">Was kostet dich dein Arbeitsweg wirklich mit dem Auto, und was würdest du mit einem geleasten Dienstrad sparen? Rechne es in 30 Sekunden nach.</p>
+  </div>
+</section>
+
+<main class="container">
+  <section class="calc-card">
+    <h2><span class="icon-badge">1</span> Deine Pendelstrecke</h2>
+    <div class="grid-2">
+      <label>
+        <span class="label-text">📍 Einfache Strecke zur Arbeit (km)</span>
+        <input type="number" id="km" value="8" min="0" step="0.5">
+      </label>
+      <label>
+        <span class="label-text">📅 Arbeitstage pro Monat im Büro</span>
+        <input type="number" id="tage" value="18" min="0" max="31" step="1">
+      </label>
+      <label>
+        <span class="label-text">⛽ Verbrauch Auto (Liter / 100 km)</span>
+        <input type="number" id="verbrauch" value="6.5" min="0" step="0.1">
+      </label>
+      <label>
+        <span class="label-text">💶 Spritpreis (EUR / Liter)</span>
+        <input type="number" id="spritpreis" value="1.75" min="0" step="0.01">
+      </label>
+      <label>
+        <span class="label-text">🔧 Sonstige Autokosten / Monat (Versicherung, Wartung, Verschleiß, anteilig)</span>
+        <input type="number" id="autofix" value="90" min="0" step="5">
+      </label>
+      <label>
+        <span class="label-text">🚲 Deine Dienstrad-Nettobelastung / Monat</span>
+        <input type="number" id="radkosten" value="35" min="0" step="1">
+      </label>
+    </div>
+    <button id="berechnen">Vergleich berechnen →</button>
+
+    <div id="ergebnis" class="result hidden">
+      <div class="result-grid">
+        <div class="result-box">
+          <span class="label">🚗 Auto-Kosten für den Arbeitsweg / Monat</span>
+          <span class="value" id="r-auto">-</span>
+        </div>
+        <div class="result-box">
+          <span class="label">🚲 Dienstrad-Kosten / Monat</span>
+          <span class="value" id="r-rad">-</span>
+        </div>
+        <div class="result-box highlight">
+          <span class="label">✅ Deine Ersparnis mit dem Dienstrad / Monat</span>
+          <span class="value" id="r-ersparnis">-</span>
+        </div>
+        <div class="result-box">
+          <span class="label">📈 Ersparnis pro Jahr</span>
+          <span class="value" id="r-jahr">-</span>
+        </div>
+      </div>
+      <p class="disclaimer">Vereinfachter Vergleich nur für die reine Pendelstrecke. Anschaffungskosten des Autos, Parkgebühren, Wertverlust und Wetterabhängigkeit des Radfahrens sind nicht eingerechnet. Keine Finanzberatung.</p>
+    </div>
+  </section>
+
+  <section class="info-card">
+    <h2>Warum dieser Vergleich oft überrascht</h2>
+    <p>Die meisten unterschätzen, was die reine Strecke zur Arbeit beim Auto kostet, weil Sprit, Verschleiß und Versicherung selten einzeln auf den Arbeitsweg heruntergerechnet werden. Bei 8 km einfacher Strecke und 18 Arbeitstagen im Büro kommen schnell 100-150 EUR im Monat allein für diese Fahrten zusammen, oft mehr als die Nettobelastung eines geleasten Dienstrads. Wer die Strecke ganz oder teilweise aufs Rad verlagert, spart nicht nur Geld, sondern auch Parkplatzsuche und Stau.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-brand"><span class="brand-icon" aria-hidden="true">🚲</span> Radleasing-Check</div>
+    <p class="footer-tagline">Unabhängige Rechner rund ums Dienstrad-Leasing. Keine Werbepartnerschaft mit Leasinganbietern.</p>
+    <p>&copy; 2026 Radleasing-Check &middot; <a href="impressum.html">Impressum</a> &middot; <a href="datenschutz.html">Datenschutz</a></p>
+  </div>
+</footer>
+
+<script src="pendler.js"></script>
+</body>
+</html>
